@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import SimpleTabs from './Components/Button';
+import HistoricPanel from './Components/HistoricPanel'
+import SideDrawer from './Components/Drawer'
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
-      <SimpleTabs />
+      <SideDrawer />
     </div>
   );
 }
