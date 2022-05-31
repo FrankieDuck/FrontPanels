@@ -3,12 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-
-import LiveHistoricTabs from "./LiveHistoricTab";
-import DateAndTimePicker from "./DatePickers";
-import ResolutionPicker from "./ResolutionPicker";
-import DiscardUpdateButtons from "./DiscardUpdateButtons";
+import LiveHistoricTabs from "../LiveHistoricTab/LiveHistoricTab";
+import DateAndTimePicker from "../DatePickers/DatePickers";
+import ResolutionPicker from "../ResolutionPicker/ResolutionPicker";
+import DiscardUpdateButtons from "../DiscardUpdateButtons/DiscardUpdateButtons";
 
 const useStyles = makeStyles({
   root: {
@@ -38,7 +36,7 @@ const cardStyles = {
   }
 
 
-export default function HistoricPanel() {
+export default function HistoricView() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 

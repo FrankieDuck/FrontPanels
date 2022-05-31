@@ -10,10 +10,8 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-
-import LiveHistoricTabs from './LiveHistoricTab';
-import DiscardUpdateButtons from './DiscardUpdateButtons';
-import HistoricView from './Views/HistoricView'
+import HelpDrawer from './HelpPanel/HelpPanelDrawer';
+import HistoricView from './HistoricPanel/HistoricPanel'
 
 const drawerWidth = 350;
 
@@ -74,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SideDrawer() {
+export default function LandingPage() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -96,7 +94,6 @@ export default function SideDrawer() {
           [classes.appBarShift]: open,
         })}
       >
-        
         <Toolbar>
           <IconButton
             color="inherit"
@@ -107,6 +104,9 @@ export default function SideDrawer() {
           >
             <MenuIcon />
           </IconButton>
+
+          <HelpDrawer />
+
           <Typography variant="h6" noWrap>
             Brains.app
           </Typography>
@@ -121,7 +121,6 @@ export default function SideDrawer() {
           paper: classes.drawerPaper,
         }}
       >
-
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}

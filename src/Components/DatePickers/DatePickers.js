@@ -29,7 +29,7 @@ function DateAndTimePicker(props) {
         onError={console.log}
         disablePast
         format="dd/MM/yyyy HH:mm"
-      />
+      />Picker1
       <KeyboardDateTimePicker
       style={style}
         variant="inline"
@@ -40,7 +40,7 @@ function DateAndTimePicker(props) {
         onError={console.log}
         disablePast
         format="dd/MM/yyyy HH:mm"
-      />
+      />Picker2
       </MuiPickersUtilsProvider>
     </>
   );

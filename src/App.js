@@ -1,13 +1,20 @@
 import React from 'react';
-import './App.css';
-import HistoricPanel from './Components/HistoricPanel'
-import SideDrawer from './Components/Drawer'
+
+import HistoricPanel from './Components/HistoricPanel/HistoricView'
+import HelpPanel from './Components/HelpPanel/HelpPanel';
+import LivePanel from './Components/LivePanel/LivePanel';
+import HelpDrawer from './Components/HelpPanel/HelpPanelDrawer';
+import LandingPage from './Components/LandingPage'
+import HistoricDrawer from './Components/HomePage'
+
+import TimePicker from './Components/ValuePicker/ValuePickers'
+
 
 
 function App() {
   return (
     <div className="App">
-      <SideDrawer />
+      <LandingPage />
     </div>
   );
 }
