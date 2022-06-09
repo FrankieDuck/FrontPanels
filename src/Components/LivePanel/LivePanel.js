@@ -2,7 +2,7 @@ import LiveView from "./LiveView";
 
 export default function LivePanel() {
     return (
-      <div className="App">
+      <div className="App" data-testid="Live-Panel">
         <LiveView />
       </div>
     );

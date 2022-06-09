@@ -8,13 +8,13 @@ import LandingPage from './Components/LandingPage'
 import HistoricDrawer from './Components/HomePage'
 
 import TimePicker from './Components/ValuePicker/ValuePickers'
-
+import LiveHistoricTabs from './Components/LiveHistoricTab/LiveHistoricTab'
 
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      <LiveHistoricTabs />
     </div>
   );
 }

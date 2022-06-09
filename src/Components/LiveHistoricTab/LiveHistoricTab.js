@@ -15,6 +15,7 @@ export default function LiveHistoricTabs() {
   return (
     <Paper square >
       <Tabs 
+        data-testid="Live-Historic-Tabs"
         value={value}
         indicatorColor="blue"
         textColor="primary"

@@ -40,7 +40,7 @@ const useStyles = makeStyles({
     const bull = <span className={classes.bullet}>•</span>;
   
     return (
-      <Card className={classes.root} style={cardStyles}>
+      <Card className={classes.root} style={cardStyles} data-testid="Live-View">
         <CardContent>
 
         <LiveHistoricTabs />
